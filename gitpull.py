@@ -5,4 +5,4 @@ repoLocal = "D:\\aleks\\Desktop\\py"
 repo = git.Repo(repoLocal)
 origin = repo.remote(name='origin')
 origin.pull()
-os.startfile('D:\\aleks\\Desktop\\py\\shutdown.py')
+# os.startfile('D:\\aleks\\Desktop\\py\\shutdown.py')
