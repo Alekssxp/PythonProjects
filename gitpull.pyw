@@ -12,7 +12,3 @@ for i in range (10):
     except Exception:
         sleep(10)
         continue
-# try:
-#     origin.pull()
-# except Exception:
-#     print("нет сети")
