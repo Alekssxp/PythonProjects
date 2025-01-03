@@ -5,7 +5,9 @@ from time import sleep
 repoLocal = "D:\\aleks\\Desktop\\py"
 repo = git.Repo(repoLocal)
 origin = repo.remote(name='origin')
-for i in range (10):
+i = 1
+while i < 1:
+    i -= 1
     try:
         origin.pull()
         os.startfile('D:\\aleks\\Desktop\\py\\shutdown.pyw')
