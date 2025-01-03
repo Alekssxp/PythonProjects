@@ -10,7 +10,7 @@ def shutdown ():
         os.system("shutdown /p /f")
     elif t[6] == 6 and t[3] > 21:
         os.system("shutdown /p /f")
-shutdown()
+# shutdown()
 def test():
     os.system("shutdown /p /f")
-#test()
+test()
