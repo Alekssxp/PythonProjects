@@ -9,7 +9,10 @@ def shutdown ():
         os.system("shutdown /p /f")
     elif t[6] == 6 and t[3] > 21:
         os.system("shutdown /p /f")
+<<<<<<< HEAD
 shutdown()
 def test():
     os.system("shutdown /p /f")
 # test()
+=======
+>>>>>>> 3ec8b270059bc653029ffa0e84330b92e7c56b4e
