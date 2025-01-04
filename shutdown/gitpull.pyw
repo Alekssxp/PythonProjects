@@ -10,7 +10,7 @@ while i < 5:
     try:
         origin.pull()
         os.startfile('D:\\aleks\\Desktop\\py\\shutdown\\shutdawn.pyw')
+        os.system('shutdown /s')
         sleep(10)
     except Exception:
         sleep(10)
-os.system('shutdown /s')
