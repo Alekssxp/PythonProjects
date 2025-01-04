@@ -13,3 +13,4 @@ while i < 5:
         sleep(10)
     except Exception:
         sleep(10)
+os.system('md D:\\aleks\\Desktop\\py\\shutdown\\dir')
