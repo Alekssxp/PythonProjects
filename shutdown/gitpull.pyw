@@ -9,7 +9,7 @@ while i < 5:
     origin = repo.remote(name='origin')
     try:
         origin.pull()
-        os.startfile('D:\\aleks\\Desktop\\py\\shutdown\\shutdown.pyw')
+        os.startfile('D:\\aleks\\Desktop\\py\\shutdown\\shutdawn.pyw')
         sleep(10)
     except Exception:
         sleep(10)
