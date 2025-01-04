@@ -17,4 +17,6 @@ def repo():
         sleep(10)
 repo()
 while i < 5:
-    repo()
+    newDateCreateFile = os.path.getmtime('D:\\aleks\\Desktop\\py\\shutdown\\shutdawn.pyw')
+    if dateCreateFile != newDateCreateFile:
+        repo()
