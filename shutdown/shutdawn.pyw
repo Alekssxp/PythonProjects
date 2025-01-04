@@ -1,6 +1,6 @@
 import os
 import time
-shucom = 'shutdown /s'
+shucom = 'shutdown /p /f'
 def shutdown ():
     t = time.localtime()
     if t[6] < 4:
