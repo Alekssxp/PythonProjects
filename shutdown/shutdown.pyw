@@ -15,7 +15,7 @@ def shutdown ():
             os.system(shucom)
         elif t[3] > 2 and t[3] < 14:
             os.system(shucom)
-shutdown()
+# shutdown()
 def test():
     os.system(shucom)
-# test()
+test()
