@@ -14,4 +14,4 @@ def shutdown ():
 # shutdown()
 def test():
     os.system(shulink)
-# test()
+test()
