@@ -55,4 +55,4 @@ while dateModifyFileGit == newModifyFileGit:
 #             os.startfile(shutdawn)
 #         sleep(10)
 #     except Exception:
-#         sleep(10)
+#         sleep(10).
