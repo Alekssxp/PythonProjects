@@ -34,7 +34,6 @@ while dateModifyFileGit == newModifyFileGit:
                 
     except Exception:
         sleep(10)
-<<<<<<< HEAD
 
 
 
@@ -57,5 +56,3 @@ while dateModifyFileGit == newModifyFileGit:
 #         sleep(10)
 #     except Exception:
 #         sleep(10)
-=======
->>>>>>> 0ef4606aeb3f1b365fb5b6f46f4674afc6b3b6a2
