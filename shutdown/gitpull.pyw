@@ -11,34 +11,6 @@ repo = git.Repo(repoLocal)
 origin = repo.remote(name='origin')
 newModifyFileshut = dateModifyFileShut
 newModifyFileGit = dateModifyFileGit
-# while dateModifyFileGit == newModifyFileGit:
-#     try:
-#         origin.pull()
-#         sleep(2)
-#         newModifyFileGit = os.path.getmtime(gitpull)
-#         if dateModifyFileGit != newModifyFileGit:
-#             os.startfile(gitpull)
-#             break
-#         else: 
-#             while newModifyFileshut == dateModifyFileShut:
-#                 # repo = git.Repo(repoLocal)
-#                 # origin = repo.remote(name='origin')
-#                 try:
-#                     origin.pull()
-#                     newDateModifyFileShut = os.path.getmtime(shutdawn)
-#                     if dateModifyFileShut != newDateModifyFileShut:
-#                         os.startfile(shutdawn)
-#                     sleep(10)
-#                 except Exception:
-#                     sleep(10)
-                
-#     except Exception:
-#         sleep(10)
-
-
-
-
-
 try:
     origin.pull()
     os.startfile(shutdawn)
@@ -52,7 +24,8 @@ while i < 5:
         origin.pull()
         newDateModifyFileShut = os.path.getmtime(shutdawn)
         if dateModifyFileShut != newDateModifyFileShut:
-            os.startfile(shutdawn)
+            # os.startfile(shutdawn)
+            print('update')
         sleep(10)
     except Exception:
         sleep(10)
