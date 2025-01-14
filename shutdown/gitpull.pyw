@@ -24,8 +24,8 @@ while i < 5:
         origin.pull()
         newDateModifyFileShut = os.path.getmtime(shutdawn)
         if dateModifyFileShut != newDateModifyFileShut:
-            # os.startfile(shutdawn)
-            print('update')
+            os.startfile(shutdawn)
+            # print('update')
         sleep(10)
     except Exception:
         sleep(10)
