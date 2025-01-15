@@ -17,4 +17,4 @@ def shutdown ():
 # shutdown()
 def test():
     os.system(shucom)
-# test().
+# test()..
