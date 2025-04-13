@@ -6,11 +6,11 @@ os.chdir(workFolder)
 
 try:
     repo = git.Repo.init(workFolder)
-    repo.create_remote('origin', 'https://github.com/Alekssxp/PythonProjects.git')
-    origin = repo.remotes.origin
     repo.git.fetch('origin', 'shutdown')
     repo.git.reset('--hard', 'FETCH_HEAD')
 except:
     repo = git.Repo.init(workFolder)
+    repo.create_remote('origin', 'https://github.com/Alekssxp/PythonProjects.git')
+    origin = repo.remotes.origin
     repo.git.fetch('origin', 'shutdown')
-    repo.git.reset('--hard', 'FETCH_HEAD')
+    repo.git.reset('--hard', 'FETCH_HEAD')    
