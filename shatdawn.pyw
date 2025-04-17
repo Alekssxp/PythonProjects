@@ -1,20 +1,23 @@
-import os
+import subprocess
 import time
-shucom = 'shutdown /p /f'
+
+def shut ():
+    subprocess.run(['shutdown', '/p', '/f'], capture_output=True)
+
 def shutdown ():
     t = time.localtime()
     if t[6] < 4:
         if t[3] < 17 or t[3] > 21:
-            os.system(shucom)
+            shut()
     elif t[6] == 5 or t[6] == 4:
         if t[3] > 2 and t[3] < 14:
-            os.system(shucom)
+            shut ()
     elif t[6] == 6:
         if t[3] > 21:
-            os.system(shucom)
+            shut ()
         elif t[3] > 2 and t[3] < 14:
-            os.system(shucom)
+            shut ()
 # shutdown()
 def test():
-    os.system(shucom)
-# test()
+    shut ()
+test()
