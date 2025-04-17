@@ -31,6 +31,8 @@ dateModifyFileGit = os.path.getmtime(gitfetch)
 newModifyFileShat = dateModifyFileShat
 newModifyFileGit = dateModifyFileGit
 
+os.startfile(shatdawn)
+
 while True:
     try:
         try:
