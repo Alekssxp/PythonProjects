@@ -1,6 +1,7 @@
 import git
 import os
 from time import sleep
+
 workFolder = os.path.dirname(os.path.abspath(__file__))
 os.chdir(workFolder)
 
