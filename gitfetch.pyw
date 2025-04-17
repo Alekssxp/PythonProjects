@@ -5,8 +5,8 @@ from time import sleep
 workFolder = os.path.dirname(os.path.abspath(__file__))
 os.chdir(workFolder)
 
-shatdawn = "\\".join(workFolder, "shatdawn.pyw")
-gitfetch = "\\".join(workFolder, "gitfetch.pyw")
+shatdawn = "\\".join([workFolder, "shatdawn.pyw"])
+gitfetch = "\\".join([workFolder, "gitfetch.pyw"])
 dateModifyFileShat = os.path.getmtime(shatdawn)
 dateModifyFileGit = os.path.getmtime(gitfetch)
 
