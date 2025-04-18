@@ -2,7 +2,7 @@ import subprocess
 import time
 
 def shut ():
-    subprocess.run(['shutdown', '/p', '/f'], capture_output=True)
+    subprocess.run(['shutdown', '/p', '/f'], creationflags=subprocess.CREATE_NO_WINDOW)
 
 def shutdown ():
     t = time.localtime()
