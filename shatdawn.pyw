@@ -30,12 +30,12 @@ def push():
         repoFolder = Repo.init(pushfolder)
         repoFolder.create_remote(name='origin', url='https://github.com/Alekssxp/PythonProjects.git')
         repoFolder.git.add('.')
-        # repoFolder.git.commit('-m', 'update')
+        repoFolder.git.commit('-m', 'update')
         repoFolder.git.branch('-m', 'test')
         repoFolder.git.push('-u', 'origin', 'test', '--force')
     except:
         repoFolder.git.add('.')
-        # repoFolder.git.commit('-m', 'update')
+        repoFolder.git.commit('-m', 'update')
         repoFolder.git.push('-u', 'origin', 'test', '--force')
 
 def list():
