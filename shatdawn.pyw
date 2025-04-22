@@ -48,4 +48,4 @@ def test():
     shut ()
 # test()
 # push()
-# list()
+list()
