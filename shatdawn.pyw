@@ -26,21 +26,24 @@ def shutdown ():
             shut ()
 def push():
 
-    try:
-        repoFolder = Repo.init(pushfolder)
-        repoFolder.create_remote(name='origin', url='https://github.com/Alekssxp/PythonProjects.git')
-        repoFolder.git.add('.')
-        repoFolder.git.commit('-m', 'update')
-        repoFolder.git.branch('-m', 'test')
-        repoFolder.git.push('-u', 'origin', 'test', '--force')
-    except:
-        repoFolder = Repo(pushfolder)
-        repoFolder.git.add('.')
-        repoFolder.git.commit('-m', 'update')
-        repoFolder.git.push('-u', 'origin', 'test', '--force')
+    # try:
+    #     repoFolder = Repo.init(pushfolder)
+    #     repoFolder.create_remote(name='origin', url='https://github.com/Alekssxp/PythonProjects.git')
+    #     repoFolder.git.add('.')
+    #     repoFolder.git.commit('-m', 'update')
+    #     repoFolder.git.branch('-m', 'test')
+    #     repoFolder.git.push('-u', 'origin', 'test', '--force')
+    # except:
+    #     repoFolder = Repo(pushfolder)
+    #     repoFolder.git.add('.')
+    #     repoFolder.git.commit('-m', 'update')
+    #     repoFolder.git.push('-u', 'origin', 'test', '--force')
 
-    # repo = Repo(pushfolder)
-    # repo.git.checkout('-b', 'test')
+    repo = Repo(pushfolder)
+    repo.git.checkout('-b', 'test')
+    repoFolder.git.add('.')
+    repoFolder.git.commit('-m', 'update')
+    repoFolder.git.push('-u', 'origin', 'test', '--force')
 
 def list():
     # os.mkdir(pushfolder)
