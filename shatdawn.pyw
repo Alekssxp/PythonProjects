@@ -6,7 +6,7 @@ import os
 
 workfolder = os.path.dirname(os.path.abspath(__file__))
 os.chdir(workfolder)
-pushfolder = 'D:\\push'
+pushfolder = '..\\push'
     
 def shut ():
     subprocess.run(['shutdown', '/p', '/f'], creationflags=subprocess.CREATE_NO_WINDOW)
@@ -48,4 +48,4 @@ def test():
     shut ()
 # test()
 # push()
-list()
+#list()
