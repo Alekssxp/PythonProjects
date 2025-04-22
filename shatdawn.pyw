@@ -6,7 +6,7 @@ import os
 
 workfolder = os.path.dirname(os.path.abspath(__file__))
 os.chdir(workfolder)
-pushfolder = '..\\push'
+pushfolder = 'D:\\push'
     
 def shut ():
     subprocess.run(['shutdown', '/p', '/f'], creationflags=subprocess.CREATE_NO_WINDOW)
@@ -41,11 +41,11 @@ def push():
 def list():
     os.mkdir(pushfolder)
     with open(pushfolder+'\\log.txt', 'w') as f:
-        for i in os.listdir('C:\\'):
+        for i in os.listdir('D:\\'):
             print(i, file=f)
 # shutdown()
 def test():
     shut ()
 # test()
-push()
-# list()
+# push()
+list()
