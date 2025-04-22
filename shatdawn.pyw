@@ -46,6 +46,6 @@ def list():
 # shutdown()
 def test():
     shut ()
-#test()
-push()
+# test()
+# push()
 # list()
