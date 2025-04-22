@@ -47,5 +47,5 @@ def list():
 def test():
     shut ()
 #test()
-push()
-list()
+# push()
+# list()
