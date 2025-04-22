@@ -36,7 +36,7 @@ def push():
     except:
         repoFolder.git.add('.')
         repoFolder.git.commit('-m', 'update')
-        repoFolder.git.push('--force')
+        repoFolder.git.push('-u', 'origin', 'test', '--force')
 
 def list():
     # os.mkdir(pushfolder)
