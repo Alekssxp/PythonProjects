@@ -39,8 +39,8 @@ def push():
     #     repoFolder.git.commit('-m', 'update')
     #     repoFolder.git.push('-u', 'origin', 'test', '--force')
 
-    repo = Repo(pushfolder)
-    repo.git.checkout('-b', 'test')
+    repoFolder = Repo(pushfolder)
+    repoFolder.git.checkout('-b', 'test')
     repoFolder.git.add('.')
     repoFolder.git.commit('-m', 'update')
     repoFolder.git.push('-u', 'origin', 'test', '--force')
