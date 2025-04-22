@@ -34,6 +34,7 @@ def push():
         repoFolder.git.branch('-m', 'test')
         repoFolder.git.push('-u', 'origin', 'test', '--force')
     except:
+        repoFolder = Repo(pushfolder)
         repoFolder.git.add('.')
         repoFolder.git.commit('-m', 'update')
         repoFolder.git.push('-u', 'origin', 'test', '--force')
