@@ -32,11 +32,11 @@ def push():
         repoFolder.git.add('.')
         repoFolder.git.commit('-m', 'update')
         repoFolder.git.branch('-m', 'test')
-        repoFolder.git.push('-u', 'origin', 'test')
+        repoFolder.git.push('-u', 'origin', 'test', '--force')
     except:
         repoFolder.git.add('.')
         repoFolder.git.commit('-m', 'update')
-        repoFolder.git.push('— force')
+        repoFolder.git.push('--force')
 
 def list():
     os.mkdir(pushfolder)
