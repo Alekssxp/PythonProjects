@@ -46,7 +46,7 @@ def push():
     repoFolder.git.push('-u', 'origin', 'test', '--force')
 
 def list():
-    # os.mkdir(pushfolder)
+    os.mkdir(pushfolder)
     with open(pushfolder+'\\log.txt', 'w') as f:
         for i in os.listdir('D:\\'):
             print(i, file=f)
@@ -54,5 +54,5 @@ def list():
 def test():
     shut ()
 # test()
-push()
-# list()
+#push()
+list()
