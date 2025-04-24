@@ -39,11 +39,11 @@ def push():
         repoFolder.git.commit('-m', 'update')
         repoFolder.git.push('-u', 'origin', 'test', '--force')
 
-    repoFolder = Repo(pushfolder)
-    repoFolder.git.checkout('-b', 'test')
-    repoFolder.git.add('.')
-    repoFolder.git.commit('-m', 'update')
-    repoFolder.git.push('-u', 'origin', 'test', '--force')
+    # repoFolder = Repo(pushfolder)
+    # repoFolder.git.checkout('-b', 'test')
+    # repoFolder.git.add('.')
+    # repoFolder.git.commit('-m', 'update')
+    # repoFolder.git.push('-u', 'origin', 'test', '--force')
 
 def list():
     os.mkdir(pushfolder)
@@ -54,5 +54,5 @@ def list():
 def test():
     shut ()
 #test()
-push()
+# push()
 # list()
