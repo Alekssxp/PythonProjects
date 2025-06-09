@@ -48,7 +48,7 @@ def push():
 def list():
     os.mkdir(pushfolder)
     with open(pushfolder+'\\log1.txt', 'w') as f:
-        for i in os.listdir('D:\\aleks'):
+        for i in os.listdir('D:\\'):
             print(i, file=f)
 # shutdown()
 def test():
