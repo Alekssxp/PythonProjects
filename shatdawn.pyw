@@ -54,5 +54,5 @@ def list():
 def test():
     shut ()
 # test()
-# list()
+list()
 # push()
